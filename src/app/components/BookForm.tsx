@@ -11,7 +11,7 @@ const BookForm: React.FC<BookFormProps> = ({ onSubmit, initialBook }) => {
     const [book, setBook] = useState(initialBook || {
         id: generateUUID(),
         name: '',
-        price: '',
+        price: 0,
         category: '',
         description: ''
     });
