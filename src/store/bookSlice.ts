@@ -34,7 +34,7 @@ const bookSlice = createSlice({
         addBook: (state, action: PayloadAction<Book>) => {
             state.push(action.payload);
         },
-        deleteBook: (state, action: PayloadAction<number>) => {
+        deleteBook: (state, action: PayloadAction<string>) => {
             return state.filter(book => book.id !== action.payload);
         },
         updateBook: (state, action: PayloadAction<Book>) => {
