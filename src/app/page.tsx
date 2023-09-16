@@ -30,10 +30,10 @@ const MainPage: React.FC = () => {
         setIsFormOpen(true);
     };
 
-    const handleDeleteBook = (id: string | number) => {
-        const bookId = typeof id === 'string' ? parseInt(id, 10) : id;
-        dispatch(deleteBook(bookId));
+    const handleDeleteBook = (id: string) => {
+        dispatch(deleteBook(id));
     };
+
 
     return (
         <div className="container mx-auto p-8">
