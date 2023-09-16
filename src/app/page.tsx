@@ -31,7 +31,8 @@ const MainPage: React.FC = () => {
     };
 
     const handleDeleteBook = (id: string | number) => {
-        dispatch(deleteBook(id));
+        const bookId = typeof id === 'string' ? parseInt(id, 10) : id;
+        dispatch(deleteBook(bookId));
     };
 
     return (
