@@ -30,7 +30,7 @@ const MainPage: React.FC = () => {
         setIsFormOpen(true);
     };
 
-    const handleDeleteBook = (id: string) => {
+    const handleDeleteBook = (id: string | number) => {
         dispatch(deleteBook(id));
     };
 
