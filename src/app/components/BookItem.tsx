@@ -3,7 +3,7 @@ import { Book } from '@/store/bookSlice';
 
 interface BookItemProps {
     book: Book;
-    onDelete: (id: number | string) => void;
+    onDelete: (id: string) => void;
     onEdit: (book: Book) => void;
 }
 
